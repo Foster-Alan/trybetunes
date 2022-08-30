@@ -16,7 +16,7 @@ class Login extends React.Component {
     this.setState({ name: event.target.value });
   };
 
-  // Função para o botão
+  // Função para o Botão
 
   handleonClick = async () => {
     const { name } = this.state;
