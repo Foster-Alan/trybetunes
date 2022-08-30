@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-// rendeziar a mensagem de "Carregando"
+// rendeziar  "Carregando"
 class Loading extends Component {
   render() {
     return (

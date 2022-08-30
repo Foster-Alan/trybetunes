@@ -10,9 +10,13 @@ class Login extends React.Component {
     logged: false,
   };
 
+  // função para o input
+
   handleChange = (event) => {
     this.setState({ name: event.target.value });
   };
+
+  // Função para o botão
 
   handleonClick = async () => {
     const { name } = this.state;
