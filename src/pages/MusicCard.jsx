@@ -15,7 +15,7 @@ class MusicCard extends React.Component {
     });
   }
 
-  // Função para adicionar favorito.
+  // Função para adicionar favorito.//
   addFavorite = () => {
     this.setState({ loading: true }, async () => {
       await addSong({ ...this.props });
