@@ -8,7 +8,7 @@ class Search extends React.Component {
   state = {
     artist: '',
     albums: [],
-    serch: '',
+    search: '',
     ButtonDisabled: true,
     loading: false,
   };
@@ -32,7 +32,7 @@ class Search extends React.Component {
   handleclick = () => {
     const { artist } = this.state;
     this.setState(
-      { loading: true, serch: artist },
+      { loading: true, search: artist },
       async () => {
         const albums = await searchAlbumsAPI(artist);
         this.setState({
@@ -49,7 +49,7 @@ class Search extends React.Component {
     const {
       artist,
       albums,
-      serch,
+      search,
       ButtonDisabled,
       loading,
     } = this.state;
@@ -79,7 +79,7 @@ class Search extends React.Component {
         <div>
           {!albums.length ? 'Nenhum álbum foi encontrado' : (
             <div>
-              <p>{`Resultado de álbuns de: ${serch}`}</p>
+              <p>{`Resultado de álbuns de: ${search}`}</p>
               {albums.map(({
                 artistName,
                 collectionId,
