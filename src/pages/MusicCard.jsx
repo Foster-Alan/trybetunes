@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { addSong } from '../services/favoriteSongsAPI';
+import { addSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
 import Loading from './Loading';
 
 class MusicCard extends React.Component {
@@ -8,6 +8,12 @@ class MusicCard extends React.Component {
     favorite: [],
     loading: false,
   };
+
+  async componentDidMount() {
+    this.setState({
+      favorite: await getFavoriteSongs(),
+    });
+  }
 
   // Função para adicionar favorito.
   addFavorite = () => {
