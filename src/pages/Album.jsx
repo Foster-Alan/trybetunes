@@ -6,7 +6,7 @@ import Loading from './Loading';
 import MusicCard from './MusicCard';
 import { addSong, getFavoriteSongs, removeSong } from '../services/favoriteSongsAPI';
 
-class Album extends Component {
+export default class Album extends Component {
   state = {
     artistName: '',
     artworkUrl100: '',
@@ -100,5 +100,3 @@ Album.propTypes = {
     }).isRequired,
   }).isRequired,
 };
-
-export default Album;

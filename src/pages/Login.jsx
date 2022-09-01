@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import Loading from './Loading';
 import { createUser } from '../services/userAPI';
 
-class Login extends React.Component {
+export default class Login extends React.Component {
   state = {
     name: '',
     loading: false,
@@ -58,5 +58,3 @@ class Login extends React.Component {
     );
   }
 }
-
-export default Login;

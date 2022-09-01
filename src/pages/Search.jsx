@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Loading from './Loading';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
 
-class Search extends React.Component {
+export default class Search extends React.Component {
   state = {
     artist: '',
     albums: [],
@@ -84,17 +84,11 @@ class Search extends React.Component {
                 artistName,
                 collectionId,
                 collectionName,
-                collectionPrice,
                 artworkUrl100,
-                releaseDate,
-                trackCount,
               }) => (
                 <div key={ collectionId }>
                   <img src={ artworkUrl100 } alt={ artistName } />
                   <h4>{ artistName }</h4>
-                  <p>{ collectionPrice }</p>
-                  <p>{ releaseDate }</p>
-                  <p>{ trackCount }</p>
                   <Link
                     to={ `/album/${collectionId}` }
                     data-testid={ `link-to-album-${collectionId}` }
@@ -110,5 +104,3 @@ class Search extends React.Component {
     );
   }
 }
-
-export default Search;

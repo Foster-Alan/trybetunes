@@ -4,7 +4,7 @@ import Loading from './Loading';
 import { addSong, getFavoriteSongs, removeSong } from '../services/favoriteSongsAPI';
 import MusicCard from './MusicCard';
 
-class Favorites extends Component {
+export default class Favorites extends Component {
   state = {
     favoriteSounds: [],
     loading: false,
@@ -71,5 +71,3 @@ class Favorites extends Component {
     );
   }
 }
-
-export default Favorites;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class MusicCard extends Component {
+export default class MusicCard extends Component {
   render() {
     const { value, handleChange, checked } = this.props;
     const { trackName, previewUrl, trackId } = value;
@@ -36,5 +36,3 @@ MusicCard.propTypes = {
     trackId: PropTypes.number,
   }).isRequired,
 }.isRequired;
-
-export default MusicCard;

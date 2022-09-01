@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // rendeziar  "Carregando"
-class Loading extends Component {
+export default class Loading extends Component {
   render() {
     return (
       <div>
@@ -10,5 +10,3 @@ class Loading extends Component {
     );
   }
 }
-
-export default Loading;
