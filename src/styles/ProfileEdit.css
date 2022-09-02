@@ -1,10 +1,10 @@
+/* stylelint-disable indentation */
 .content-edit {
     display: flex;
     justify-content: center;
 }
 
 .content-edit div {
-    /* border: solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,9 +12,8 @@
 }
 
 .content-edit input {
-    /* border: solid red; */
-    width: 100%;
     background-color: grey;
+    width: 100%;
 }
 
 .content-edit textarea {

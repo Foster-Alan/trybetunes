@@ -66,58 +66,58 @@ export default class ProfileEdit extends React.Component {
           <form className="content-edit">
             <img data-testid="profile-image" src={ image } alt={ name } />
             <div>
-            <label htmlFor="image">
-              Imagem:
-              <input
-                data-testid="edit-input-image"
-                type="text"
-                value={ image }
-                id="image"
-                onChange={ this.handlechange }
-                placeholder="Insira uma url"
-              />
-            </label>
-            <label htmlFor="name">
-              Nome:
-              <input
-                data-testid="edit-input-name"
-                type="text"
-                id="name"
-                value={ name }
-                onChange={ this.handlechange }
-              />
-            </label>
-            <label htmlFor="email">
-              E-mail:
-              <input
-                data-testid="edit-input-email"
-                type="email"
-                value={ email }
-                id="email"
-                onChange={ this.handlechange }
-              />
-            </label>
-            <label htmlFor="description">
-              Descrição:
-              <textarea
-                data-testid="edit-input-description"
-                type="text"
-                value={ description }
-                id="description"
-                onChange={ this.handlechange }
-                cols="30"
-                rows="4"
-              />
-            </label>
-            <button
-              data-testid="edit-button-save"
-              type="button"
-              disabled={ Disabled }
-              onClick={ this.handleClick }
-            >
-              Salvar
+              <label htmlFor="image">
+                Imagem:
+                <input
+                  data-testid="edit-input-image"
+                  type="text"
+                  value={ image }
+                  id="image"
+                  onChange={ this.handlechange }
+                  placeholder="Insira uma url"
+                />
+              </label>
+              <label htmlFor="name">
+                Nome:
+                <input
+                  data-testid="edit-input-name"
+                  type="text"
+                  id="name"
+                  value={ name }
+                  onChange={ this.handlechange }
+                />
+              </label>
+              <label htmlFor="email">
+                E-mail:
+                <input
+                  data-testid="edit-input-email"
+                  type="email"
+                  value={ email }
+                  id="email"
+                  onChange={ this.handlechange }
+                />
+              </label>
+              <label htmlFor="description">
+                Descrição:
+                <textarea
+                  data-testid="edit-input-description"
+                  type="text"
+                  value={ description }
+                  id="description"
+                  onChange={ this.handlechange }
+                  cols="30"
+                  rows="4"
+                />
+              </label>
+              <button
+                data-testid="edit-button-save"
+                type="button"
+                disabled={ Disabled }
+                onClick={ this.handleClick }
+              >
+                Salvar
 
-            </button>
+              </button>
             </div>
           </form>)}
       </div>
