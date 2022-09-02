@@ -34,7 +34,7 @@ export default class Header extends Component {
         <Link to="/favorites" data-testid="link-to-favorites">Favoritas</Link>
         <Link to="/profile" data-testid="link-to-profile">Perfil</Link>
         <p data-testid="header-user-name">
-          { loading ? <Loading /> : `${username.name} está online` }
+          { loading ? <Loading /> : `${username.name}` }
         </p>
 
       </header>

@@ -7,7 +7,7 @@ import '../styles/Profile.css';
 
 export default class Profile extends Component {
   state = {
-    userName: [],
+    userName: '',
     loading: false,
   };
 
@@ -27,7 +27,7 @@ export default class Profile extends Component {
     const { userName, loading } = this.state;
     const { name, email, image, description } = userName;
     return (
-      <>
+      <div>
         <Header />
         <div data-testid="page-profile">
           {loading
@@ -40,8 +40,10 @@ export default class Profile extends Component {
                   src={ image }
                   alt={ name }
                 />
-                <h2>Nome</h2>
-                <p>{ name }</p>
+                <div>
+                  <h2>Nome</h2>
+                  <p>{ name }</p>
+                </div>
                 <h2>E-mail</h2>
                 <p>{ email }</p>
                 <h2>Descrição</h2>
@@ -50,7 +52,7 @@ export default class Profile extends Component {
               </div>
             )}
         </div>
-      </>
+      </div>
     );
   }
 }
