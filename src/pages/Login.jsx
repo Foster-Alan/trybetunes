@@ -2,6 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import Loading from './Loading';
 import { createUser } from '../services/userAPI';
+import '../styles/Loguin.css';
 
 export default class Login extends React.Component {
   state = {
@@ -34,16 +35,20 @@ export default class Login extends React.Component {
     if (logged) return <Redirect to="/search" />;
     return (
       <div
+        className="main-Conteiner"
         id="login"
         data-testid="page-login"
       >
-        <form>
+        {' '}
+        <h1 className="loguinHeader">Trybe Tunes</h1>
+        <form className="loguin-Form">
           <input
+            className="loguin-input"
             id="name"
             type="text"
             data-testid="login-name-input"
             onChange={ this.handleChange }
-            placeholder="Loguin"
+            placeholder="Escreva Seu nome"
           />
           <button
             data-testid="login-submit-button"

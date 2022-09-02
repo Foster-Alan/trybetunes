@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: orange;
+}
+
+.loguinHeader {
+    color: orange;
+    text-align: center;
+    font-size: 500%;
+}
+
+.loguin-Form {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    margin: 30% 34%;
+    padding: 10px;
+
+}
+
+.loguin-input {
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+button {
+    color: orange;
+    background-color: black;
+    border: solid grey;
+    border-radius: 10px;
+}

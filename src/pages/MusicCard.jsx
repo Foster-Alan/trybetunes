@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../styles/MusicCard.css';
 
 export default class MusicCard extends Component {
   render() {
     const { value, handleChange, checked } = this.props;
     const { trackName, previewUrl, trackId } = value;
     return (
-      <div>
+      <div className="content-music">
         <h3>{ trackName }</h3>
         <audio data-testid="audio-component" src={ previewUrl } controls>
           <track kind="captions" />

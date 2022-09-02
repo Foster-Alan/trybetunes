@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import { getUser, updateUser } from '../services/userAPI';
 import Loading from './Loading';
+import '../styles/ProfileEdit.css';
 
 export default class ProfileEdit extends React.Component {
   state = {
@@ -62,8 +63,9 @@ export default class ProfileEdit extends React.Component {
       <div data-testid="page-profile-edit">
         <Header />
         {loading ? <Loading /> : (
-          <form>
+          <form className="content-edit">
             <img data-testid="profile-image" src={ image } alt={ name } />
+            <div>
             <label htmlFor="image">
               Imagem:
               <input
@@ -116,6 +118,7 @@ export default class ProfileEdit extends React.Component {
               Salvar
 
             </button>
+            </div>
           </form>)}
       </div>
     );

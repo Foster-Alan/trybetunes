@@ -1,0 +1,19 @@
+.content-profile {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.content-profile a {
+    color: orangered;
+}
+
+.content-profile h1 {
+    font-size: 100px;
+}
+
+.content-profile img {
+    width: 300px;
+    text-align: center;
+    margin-left: 39%;
+}

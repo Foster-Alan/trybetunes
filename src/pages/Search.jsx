@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Loading from './Loading';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
+import '../styles/Search.css';
 
 export default class Search extends React.Component {
   state = {
@@ -57,12 +58,13 @@ export default class Search extends React.Component {
       <div data-testid="page-search">
         <Header />
         {loading ? <Loading /> : (
-          <div>
+          <div className="form-search">
             <input
+              className="imput-search"
               type="text"
               name="artist"
               data-testid="search-artist-input"
-              placeholder="Banda / Artista"
+              placeholder="Procurar Banda / Artista"
               value={ artist }
               onChange={ this.handlechange }
             />
@@ -76,17 +78,17 @@ export default class Search extends React.Component {
             </button>
           </div>
         )}
-        <div>
+        <div className="naoEncontrado">
           {!albums.length ? 'Nenhum álbum foi encontrado' : (
-            <div>
-              <p>{`Resultado de álbuns de: ${search}`}</p>
+            <div className="content-cards">
+              <p className="result">{`Resultado de álbuns de: ${search}`}</p>
               {albums.map(({
                 artistName,
                 collectionId,
                 collectionName,
                 artworkUrl100,
               }) => (
-                <div key={ collectionId }>
+                <div className="cards" key={ collectionId }>
                   <img src={ artworkUrl100 } alt={ artistName } />
                   <h4>{ artistName }</h4>
                   <Link

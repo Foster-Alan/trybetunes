@@ -1,0 +1,22 @@
+.content-edit {
+    display: flex;
+    justify-content: center;
+}
+
+.content-edit div {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.content-edit input {
+    /* border: solid red; */
+    width: 100%;
+    background-color: grey;
+}
+
+.content-edit textarea {
+    width: 100%;
+}

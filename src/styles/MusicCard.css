@@ -1,0 +1,30 @@
+.content-music audio {
+    /* border: solid red;
+    min-width: 200px;
+    max-width: 200px; */
+}
+
+.main-content-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.content-music {
+    border: solid grey;
+    margin: 5px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.content-music label {
+    border: solid white;
+    margin: 4px
+}

@@ -5,6 +5,8 @@ import getMusics from '../services/musicsAPI';
 import Loading from './Loading';
 import MusicCard from './MusicCard';
 import { addSong, getFavoriteSongs, removeSong } from '../services/favoriteSongsAPI';
+import '../styles/Album.css';
+import '../styles/MusicCard.css';
 
 export default class Album extends Component {
   state = {
@@ -65,16 +67,18 @@ export default class Album extends Component {
     return (
       <>
         <Header />
-        <div data-testid="page-album">
+        <div className="content-album" data-testid="page-album">
           {loading
             ? <Loading />
             : (
               <div>
-                <h1>Album</h1>
-                <img src={ artworkUrl100 } alt={ artistName } />
-                <p data-testid="artist-name">{ artistName }</p>
-                <p data-testid="album-name">{ collectionName }</p>
-                <div>
+                <div className="content-header-album">
+                  <h1>Album</h1>
+                  <img src={ artworkUrl100 } alt={ artistName } />
+                  <p data-testid="artist-name">{ artistName }</p>
+                  <p data-testid="album-name">{ collectionName }</p>
+                </div>
+                <div className="main-content-album">
                   { listMusic.map((music) => (
                     <MusicCard
                       key={ music.trackId }
