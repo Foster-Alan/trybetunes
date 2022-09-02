@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../styles/Loading.css';
 
 // rendeziar  "Carregando"
 export default class Loading extends Component {
