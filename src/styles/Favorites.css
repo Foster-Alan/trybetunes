@@ -1,10 +1,10 @@
 .content-favorite {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .content-favorite h1 {
-    width: 100%;
-    text-align: center;
+  text-align: center;
+  width: 100%;
 }

@@ -1,25 +1,24 @@
-..content-album {
-    display: flex;
+.content-album {
+  display: flex;
 }
 
 .content-album h1 {
-   /* display: flex; 
-   justify-content: center; */
+  justify-content: center;
 }
 
 .content-album img {
-    width: 300px;
-    /* border: solid red; */
+  width: 300px;
+
 }
 
 .content-album p {
-    font-size: 150%;
+  font-size: 150%;
 }
 
 .content-header-album {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }

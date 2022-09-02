@@ -1,21 +1,20 @@
-/* stylelint-disable indentation */
 .content-edit {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .content-edit div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .content-edit input {
-    background-color: grey;
-    width: 100%;
+  background-color: grey;
+  width: 100%;
 }
 
 .content-edit textarea {
-    width: 100%;
+  width: 100%;
 }

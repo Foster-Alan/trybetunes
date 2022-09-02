@@ -1,13 +1,12 @@
 .content-header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 0% 20%;
+  align-items: baseline;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 20%;
 }
 
 .content-header a {
-    /* border: solid red; */
-    color: orangered;
+  color: orangered;
 
 }
