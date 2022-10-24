@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import { getUser, updateUser } from '../services/userAPI';
 import Loading from './Loading';
 import '../styles/ProfileEdit.css';
+import { Redirect } from 'react-router-dom';
 
 export default class ProfileEdit extends React.Component {
   state = {
@@ -118,6 +119,7 @@ export default class ProfileEdit extends React.Component {
                 Salvar
 
               </button>
+
             </div>
           </form>)}
       </div>

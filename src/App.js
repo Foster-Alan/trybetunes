@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <Switch>
+        <Routes>
           <Route exact path="/" component={ Login } />
 
           <Route exact path="/search" component={ Search } />
@@ -27,7 +27,7 @@ class App extends React.Component {
           <Route exact path="/profile/edit" component={ ProfileEdit } />
 
           <Route exact path="" component={ NotFound } />
-        </Switch>
+        </Routes>
       </BrowserRouter>
     );
   }
