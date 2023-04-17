@@ -16,16 +16,17 @@ export default class MusicCard extends Component {
           <code>audio</code>
           .
         </audio>
-        <label htmlFor={ trackId }>
-          <input
-            data-testid={ `checkbox-music-${trackId}` }
-            type="checkbox"
-            id={ trackId }
-            onChange={ handleChange }
-            checked={ checked }
-          />
-          Favorita
-        </label>
+        <div className="check">
+          <label htmlFor={ trackId }>
+            <input
+              data-testid={ `checkbox-music-${trackId}` }
+              type="checkbox"
+              id={ trackId }
+              onChange={ handleChange }
+              checked={ checked }
+            />
+          </label>
+        </div>
       </div>
     );
   }

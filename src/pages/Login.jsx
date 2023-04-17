@@ -1,4 +1,6 @@
 import React from 'react';
+import { IoMdHeadset } from 'react-icons/io';
+
 import { Redirect } from 'react-router-dom';
 import Loading from './Loading';
 import { createUser } from '../services/userAPI';
@@ -41,6 +43,7 @@ export default class Login extends React.Component {
       >
         {' '}
         <h1 className="loguinHeader">Trybe Tunes</h1>
+        <IoMdHeadset size={ 100 } className="icon" />
         <form className="loguin-Form">
           <input
             className="loguin-input"

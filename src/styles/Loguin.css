@@ -12,8 +12,7 @@ body {
 .loguin-Form {
   display: flex;
   justify-content: center;
-  margin: 30% 34%;
-  padding: 10px;
+  padding: 10%;
 
 }
 
@@ -29,4 +28,18 @@ button {
   border: solid grey;
   border-radius: 10px;
   color: orange;
+}
+
+.icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-Conteiner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
