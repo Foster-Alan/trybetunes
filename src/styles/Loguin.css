@@ -1,18 +1,23 @@
 body {
   background-color: black;
   color: orange;
+  /* overflow-y: hidden; */
 }
 
 .loguinHeader {
   color: orange;
   font-size: 500%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .loguin-Form {
   display: flex;
   justify-content: center;
-  padding: 10%;
+  padding: 2rem;
 
 }
 
@@ -20,7 +25,7 @@ body {
   border-radius: 5px;
   height: 30px;
   text-align: center;
-  width: 300px;
+  width: 15rem;
 }
 
 button {
@@ -38,8 +43,22 @@ button {
 }
 
 .main-Conteiner {
+  display: flex;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 35rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .main-Conteiner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+  }
+
 }

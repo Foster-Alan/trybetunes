@@ -18,6 +18,7 @@
   font-size: 50px;
   justify-content: center;
   margin-top: 10%;
+  text-align: center;
 }
 
 .content-cards {
@@ -33,12 +34,12 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  height: 380px;
-  margin: 10px;
+  height: 25rem;
+  margin: 1rem;
   max-width: 35%;
-  min-width: 200px;
+  /* min-width: 200px; */
   padding-bottom: 10px;
-  width: 200px;
+  width: 15rem;
 }
 
 .naoEncontrado img {
@@ -66,7 +67,7 @@
 
 .result {
   display: flex;
-  height: 50px;
+  height: 10rem;
   justify-content: center;
   width: 100%;
 }
